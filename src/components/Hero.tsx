@@ -29,11 +29,11 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Headline */}
           <h1 className="font-heritage text-5xl md:text-7xl font-bold mb-6 animate-gopuram">
-            <span className="bg-gradient-sunrise bg-clip-text text-transparent">
+            <span className="bg-gradient-sunrise bg-clip-text text-transparent drop-shadow-lg" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
               Echoes of Eternity
             </span>
             <br />
-            <span className="text-primary text-4xl md:text-5xl">
+            <span className="text-primary text-4xl md:text-5xl drop-shadow-md">
               Tamil Nadu's History & Monuments
             </span>
           </h1>
