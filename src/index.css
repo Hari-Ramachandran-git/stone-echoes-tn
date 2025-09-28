@@ -58,7 +58,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
     
     /* Heritage gradients */
-    --gradient-sunrise: linear-gradient(135deg, hsl(42 100% 65%), hsl(25 80% 60%), hsl(356 49% 52%));
+    --gradient-sunrise: linear-gradient(135deg, hsl(42 100% 75%), hsl(25 90% 70%), hsl(356 80% 65%));
     --gradient-temple: linear-gradient(180deg, hsl(30 44% 29%), hsl(30 30% 35%));
     --gradient-stone: linear-gradient(45deg, hsl(0 0% 37%), hsl(0 0% 45%));
     
@@ -110,7 +110,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
     
     /* Dark mode heritage styles */
-    --gradient-sunrise: linear-gradient(135deg, hsl(42 100% 55%), hsl(25 70% 50%), hsl(356 60% 60%));
+    --gradient-sunrise: linear-gradient(135deg, hsl(42 100% 70%), hsl(25 80% 65%), hsl(356 70% 70%));
     --gradient-temple: linear-gradient(180deg, hsl(30 20% 15%), hsl(30 15% 20%));
     --shadow-temple: 0 10px 40px -10px hsl(30 20% 8% / 0.5);
   }
