@@ -29,17 +29,18 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Headline */}
           <h1 className="font-heritage text-5xl md:text-7xl font-bold mb-6 animate-gopuram">
-            <span className="bg-gradient-sunrise bg-clip-text text-transparent drop-shadow-lg" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+            <span className="bg-gradient-sunrise bg-clip-text text-transparent drop-shadow-lg" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5)', color: '#e6beabff' }}>
               Echoes of Eternity
             </span>
             <br />
-            <span className="text-primary text-4xl md:text-5xl drop-shadow-md">
+            <span className="text-primary text-4xl md:text-5xl drop-shadow-md" style={{ color: '#5c4119ff' }}>
               Tamil Nadu's History & Monuments
             </span>
           </h1>
 
           {/* Subtext */}
-          <p className="font-culture text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-culture text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed"
+          style={{ color: 'white'}}>
             Discover the stories carved in stone, the dynasties that shaped South India, 
             and the living heritage of Tamil Nadu.
           </p>
@@ -49,7 +50,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-temple hover:shadow-glow transition-all duration-300 font-culture font-semibold px-8 py-6 text-lg"
-            >
+            onClick={() => window.location.href = '#dynasties'}>
               <Crown className="w-5 h-5 mr-2" />
               Explore Dynasties
             </Button>
@@ -57,7 +58,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300 font-culture font-semibold px-8 py-6 text-lg"
-            >
+            onClick={() => window.location.href = '#monuments'}>
               <Camera className="w-5 h-5 mr-2" />
               Visit Monuments
             </Button>
@@ -65,7 +66,7 @@ const Hero = () => {
               variant="secondary" 
               size="lg"
               className="bg-coral/10 text-coral border-coral hover:bg-coral hover:text-white transition-all duration-300 font-culture font-semibold px-8 py-6 text-lg"
-            >
+            onClick={() => window.location.href = '#quiz'}>
               <BookOpen className="w-5 h-5 mr-2" />
               Take Heritage Quiz
             </Button>

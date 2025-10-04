@@ -6,7 +6,7 @@ import brihadeeswararImage from "@/assets/brihadeeswarar-temple.jpg";
 import meenakshiImage from "@/assets/meenakshi-temple.jpg";
 import shoreTempleImage from "@/assets/shore-temple.jpg";
 import gingeeFortImage from "@/assets/gingee-fort.jpg";
-import tamilThaiTempleImage from "@/assets/tamil-thai-temple.jpg";
+import tamilThaiTempleImage from "@/assets/tamil_thai.webp";
 import theppakulamTempleImage from "@/assets/theppakulam-temple.jpg";
 
 interface Monument {
@@ -168,7 +168,7 @@ const MonumentGallery = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-2">
+                {/* <div className="flex gap-2">
                   <Button 
                     variant="outline" 
                     size="sm" 
@@ -185,7 +185,7 @@ const MonumentGallery = () => {
                     <Clock className="w-4 h-4 mr-2" />
                     History
                   </Button>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           ))}

@@ -12,8 +12,8 @@ const Footer = () => {
                 <Crown className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-heritage text-xl font-bold">Tamil Heritage</h3>
-                <p className="text-sm opacity-80">Echoes of Eternity</p>
+                <h3 className="font-heritage text-xl font-bold">Echoes of Eternity</h3>
+                <p className="text-sm opacity-80">Tamil Heritage</p>
               </div>
             </div>
             <p className="font-culture text-sm opacity-90 leading-relaxed max-w-md">
@@ -50,6 +50,18 @@ const Footer = () => {
                 Shore Temple
               </li>
               <li className="flex items-center gap-2 opacity-80">
+                <MapPin className="w-3 h-3" />
+                Gingee Fort
+              </li>
+              <li className="flex items-center gap-2 opacity-80">
+                <MapPin className="w-3 h-3" />
+                Tamil Thai Temple
+              </li>
+              <li className="flex items-center gap-2 opacity-80">
+                <MapPin className="w-3 h-3" />
+                Vandiyur Mariamman Theppakulam
+              </li>
+              <li className="flex items-center gap-2 opacity-80">
                 <Clock className="w-3 h-3" />
                 1000+ Years of History
               </li>
@@ -61,12 +73,12 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-culture text-sm opacity-80">
-              © 2024 Tamil Heritage. Preserving history for the future.
+              © 2025 Tamil Heritage. Preserving history for the future.
             </p>
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2 opacity-80">
                 <Mail className="w-4 h-4" />
-                <span className="font-culture text-sm">heritage@tamilnadu.gov.in</span>
+                <span className="font-culture text-sm">heritage@tamilnadu.lpu.in</span>
               </div>
               <p className="font-culture text-sm opacity-60">
                 Built with love for Tamil culture

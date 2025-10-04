@@ -12,8 +12,8 @@ const Header = () => {
               <Crown className="w-6 h-6 text-gold" />
             </div>
             <div>
-              <h1 className="font-heritage text-xl font-bold text-primary">Tamil Heritage</h1>
-              <p className="text-xs text-muted-foreground font-culture">Echoes of Eternity</p>
+              <h1 className="font-heritage text-xl font-bold text-primary">Echoes of Eternity</h1>
+              <p className="text-xs text-muted-foreground font-culture">Tamil Heritage</p>
             </div>
           </div>
 

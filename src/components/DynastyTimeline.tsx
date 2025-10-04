@@ -134,12 +134,12 @@ const DynastyTimeline = () => {
                         ))}
                       </div>
                       
-                      <Button 
+                      {/* <Button 
                         variant="outline" 
                         className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300"
                       >
                         Explore {dynasty.name} Era
-                      </Button>
+                      </Button> */}
                     </CardContent>
                   </Card>
                 </div>
