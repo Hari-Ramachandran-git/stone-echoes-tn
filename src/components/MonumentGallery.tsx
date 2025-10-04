@@ -7,6 +7,7 @@ import meenakshiImage from "@/assets/meenakshi-temple.jpg";
 import shoreTempleImage from "@/assets/shore-temple.jpg";
 import gingeeFortImage from "@/assets/gingee-fort.jpg";
 import tamilThaiTempleImage from "@/assets/tamil-thai-temple.jpg";
+import theppakulamTempleImage from "@/assets/theppakulam-temple.jpg";
 
 interface Monument {
   id: string;
@@ -81,6 +82,18 @@ const monuments: Monument[] = [
     highlights: ["Thai architectural style", "Buddhist heritage", "Cultural friendship monument"],
     isUNESCO: false,
     category: "Buddhist Temple"
+  },
+  {
+    id: "theppakulam-temple",
+    name: "Vandiyur Mariamman Theppakulam",
+    location: "Madurai",
+    period: "17th Century",
+    dynasty: "Nayak",
+    image: theppakulamTempleImage,
+    description: "One of the largest temple tanks in India, this sacred pond was built by King Thirumalai Nayak. The annual float festival sees deities taken on decorated rafts across the water.",
+    highlights: ["Largest temple tank in Tamil Nadu", "Annual float festival", "Mandapam in center"],
+    isUNESCO: false,
+    category: "Sacred Water Body"
   }
 ];
 
