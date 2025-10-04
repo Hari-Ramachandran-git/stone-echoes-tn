@@ -6,6 +6,7 @@ import brihadeeswararImage from "@/assets/brihadeeswarar-temple.jpg";
 import meenakshiImage from "@/assets/meenakshi-temple.jpg";
 import shoreTempleImage from "@/assets/shore-temple.jpg";
 import gingeeFortImage from "@/assets/gingee-fort.jpg";
+import tamilThaiTempleImage from "@/assets/tamil-thai-temple.jpg";
 
 interface Monument {
   id: string;
@@ -68,6 +69,18 @@ const monuments: Monument[] = [
     highlights: ["Three hilltop citadels", "Called 'Troy of the East'", "Never conquered by force"],
     isUNESCO: false,
     category: "Military Architecture"
+  },
+  {
+    id: "tamil-thai-temple",
+    name: "Tamil Thai Temple",
+    location: "Karaikudi",
+    period: "20th Century",
+    dynasty: "Modern",
+    image: tamilThaiTempleImage,
+    description: "A beautiful Buddhist temple showcasing Thai architectural style, symbolizing the cultural bond between Tamil Nadu and Thailand, featuring golden spires and intricate Thai craftsmanship.",
+    highlights: ["Thai architectural style", "Buddhist heritage", "Cultural friendship monument"],
+    isUNESCO: false,
+    category: "Buddhist Temple"
   }
 ];
 
