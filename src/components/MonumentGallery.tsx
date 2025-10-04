@@ -5,6 +5,7 @@ import { MapPin, Clock, Award, Camera } from "lucide-react";
 import brihadeeswararImage from "@/assets/brihadeeswarar-temple.jpg";
 import meenakshiImage from "@/assets/meenakshi-temple.jpg";
 import shoreTempleImage from "@/assets/shore-temple.jpg";
+import gingeeFortImage from "@/assets/gingee-fort.jpg";
 
 interface Monument {
   id: string;
@@ -55,6 +56,18 @@ const monuments: Monument[] = [
     highlights: ["Faces the ocean", "Carved from single rock", "Survived 2004 tsunami"],
     isUNESCO: true,
     category: "Rock-cut Architecture"
+  },
+  {
+    id: "gingee-fort",
+    name: "Gingee Fort",
+    location: "Villupuram",
+    period: "9th-16th Century",
+    dynasty: "Vijayanagara",
+    image: gingeeFortImage,
+    description: "Known as the 'Troy of the East', this unconquerable fortress spans three hilltops with massive fortification walls and served as a stronghold for multiple South Indian dynasties.",
+    highlights: ["Three hilltop citadels", "Called 'Troy of the East'", "Never conquered by force"],
+    isUNESCO: false,
+    category: "Military Architecture"
   }
 ];
 
