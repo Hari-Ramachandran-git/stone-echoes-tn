@@ -7,7 +7,7 @@ import meenakshiImage from "@/assets/meenakshi-temple.jpg";
 import shoreTempleImage from "@/assets/shore-temple.jpg";
 import gingeeFortImage from "@/assets/gingee-fort.jpg";
 import tamilThaiTempleImage from "@/assets/tamil-thai-temple.jpg";
-import theppakulamTempleImage from "@/assets/theppakulam-temple.jpg";
+import theppakulamTempleImage from "@/assets/theppakulam-real.jpg";
 
 interface Monument {
   id: string;
