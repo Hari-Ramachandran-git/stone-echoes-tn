@@ -1,6 +1,15 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Music, Palette, Scissors, Calendar, UtensilsCrossed, BookOpen, Sparkles } from "lucide-react";
+import bharatanatyamImg from "@/assets/bharatanatyam.jpg";
+import karagattamImg from "@/assets/karagattam.jpg";
+import poikkalKuthiraiImg from "@/assets/poikkal-kuthirai.jpg";
+import paraiAttamImg from "@/assets/parai-attam.jpg";
+import nadaswaramImg from "@/assets/nadaswaram-thavil.jpg";
+import tanjourePaintingsImg from "@/assets/tanjore-paintings.jpg";
+import kolamArtImg from "@/assets/kolam-art.jpg";
+import bronzeSculpturesImg from "@/assets/bronze-sculptures.jpg";
+import stoneCarvingsImg from "@/assets/stone-carvings.jpg";
 
 interface ArtForm {
   id: string;
@@ -8,6 +17,7 @@ interface ArtForm {
   description: string;
   category: string;
   icon: any;
+  image?: string;
 }
 
 const performingArts: ArtForm[] = [
@@ -16,35 +26,40 @@ const performingArts: ArtForm[] = [
     name: "Bharatanatyam",
     description: "Classical dance form born in Tamil temples; graceful gestures, storytelling through movement.",
     category: "Dance",
-    icon: Sparkles
+    icon: Sparkles,
+    image: bharatanatyamImg
   },
   {
     id: "karagattam",
     name: "Karagattam",
     description: "Folk dance balancing pots on the head, performed during festivals.",
     category: "Dance",
-    icon: Sparkles
+    icon: Sparkles,
+    image: karagattamImg
   },
   {
     id: "poikkal-kuthirai",
     name: "Poikkal Kuthirai Aattam",
     description: "\"Dummy horse\" dance performed in rural festivals.",
     category: "Dance",
-    icon: Sparkles
+    icon: Sparkles,
+    image: poikkalKuthiraiImg
   },
   {
     id: "parai-attam",
     name: "Parai Attam",
     description: "Oldest drum dance form, symbolizing community celebration.",
     category: "Dance",
-    icon: Sparkles
+    icon: Sparkles,
+    image: paraiAttamImg
   },
   {
     id: "nadaswaram",
     name: "Nadaswaram & Thavil",
     description: "Traditional temple instruments with divine significance.",
     category: "Music",
-    icon: Music
+    icon: Music,
+    image: nadaswaramImg
   }
 ];
 
@@ -54,28 +69,32 @@ const visualArts: ArtForm[] = [
     name: "Tanjore Paintings",
     description: "Gold foil religious art depicting deities.",
     category: "Art",
-    icon: Palette
+    icon: Palette,
+    image: tanjourePaintingsImg
   },
   {
     id: "kolam",
     name: "Kalamkari & Kolam Art",
     description: "Hand-drawn floor art using rice flour; a daily expression of devotion and symmetry.",
     category: "Art",
-    icon: Palette
+    icon: Palette,
+    image: kolamArtImg
   },
   {
     id: "bronze-sculptures",
     name: "Bronze Sculptures",
     description: "Especially Chola bronzes (Nataraja, Devi figures) known worldwide for perfection.",
     category: "Sculpture",
-    icon: Palette
+    icon: Palette,
+    image: bronzeSculpturesImg
   },
   {
     id: "stone-carvings",
     name: "Stone Carvings & Temple Murals",
     description: "Vibrant wall paintings in temples like Madurai, Chidambaram, and Kanchipuram.",
     category: "Art",
-    icon: Palette
+    icon: Palette,
+    image: stoneCarvingsImg
   }
 ];
 
@@ -212,7 +231,17 @@ const PerformingArts = () => {
         {items.map((item) => {
           const Icon = item.icon;
           return (
-            <Card key={item.id} className="group hover:shadow-temple hover:border-accent/50 transition-all duration-300 hover:-translate-y-1 bg-card/80 backdrop-blur-sm">
+            <Card key={item.id} className="group hover:shadow-temple hover:border-accent/50 transition-all duration-300 hover:-translate-y-1 bg-card/80 backdrop-blur-sm overflow-hidden">
+              {item.image && (
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+              )}
               <CardHeader className="pb-3">
                 <div className="flex items-start gap-3">
                   <div className="p-2 rounded-lg bg-accent/10 group-hover:bg-accent/20 transition-colors">
