@@ -10,6 +10,9 @@ import tamilThaiTempleImage from "@/assets/tamil_thai.webp";
 import theppakulamTempleImage from "@/assets/theppakulam-temple.jpg";
 import kattabommanFortImage from "@/assets/kattabomman-fort.jpg";
 import kalugumalaiTempleImage from "@/assets/kalugumalai-temple.jpg";
+import vivekanandaRockImage from "@/assets/vivekananda-rock.jpg";
+import keeladiSiteImage from "@/assets/keeladi-site.jpg";
+import thiruvalluvarStatueImage from "@/assets/thiruvalluvar-statue.jpg";
 
 interface Monument {
   id: string;
@@ -120,6 +123,42 @@ const monuments: Monument[] = [
     highlights: ["Rock-cut monolithic temple", "Ancient Jain sculptures", "Unfinished architectural marvel"],
     isUNESCO: false,
     category: "Rock-cut Temple"
+  },
+  {
+    id: "vivekananda-rock",
+    name: "Vivekananda Rock Memorial",
+    location: "Kanyakumari",
+    period: "20th Century",
+    dynasty: "Modern",
+    image: vivekanandaRockImage,
+    description: "Built on a sacred rock where Swami Vivekananda meditated in 1892, this memorial stands at the confluence of three seas. A symbol of spirituality and national pride, offering panoramic ocean views.",
+    highlights: ["Where three seas meet", "Meditation hall", "Stunning ocean views"],
+    isUNESCO: false,
+    category: "Modern Monument"
+  },
+  {
+    id: "keeladi",
+    name: "Keezhadi Archaeological Site",
+    location: "Sivagangai",
+    period: "6th Century BCE",
+    dynasty: "Sangam Era",
+    image: keeladiSiteImage,
+    description: "A groundbreaking archaeological site revealing 2,600-year-old urban civilization with Tamil Brahmi inscriptions, proving ancient Tamil heritage. Excavations show advanced town planning and rich cultural life.",
+    highlights: ["Ancient Tamil Brahmi script", "Sangam era settlement", "Urban civilization evidence"],
+    isUNESCO: false,
+    category: "Archaeological Site"
+  },
+  {
+    id: "thiruvalluvar-statue",
+    name: "Thiruvalluvar Statue",
+    location: "Kanyakumari",
+    period: "21st Century",
+    dynasty: "Modern",
+    image: thiruvalluvarStatueImage,
+    description: "Standing 133 feet tall representing the 133 chapters of Thirukkural, this magnificent statue honors the legendary Tamil poet-saint. One of Asia's tallest statues, overlooking the Indian Ocean.",
+    highlights: ["133 feet tall", "Honors Thirukkural author", "Coastal landmark"],
+    isUNESCO: false,
+    category: "Cultural Monument"
   }
 ];
 
@@ -157,9 +196,11 @@ const MonumentGallery = () => {
                       UNESCO
                     </Badge>
                   )}
-                  <Badge variant="secondary" className="bg-primary/80 text-primary-foreground">
-                    {monument.category}
-                  </Badge>
+                  {!["Buddhist Temple", "Sacred Water Body"].includes(monument.category) && (
+                    <Badge variant="secondary" className="bg-primary/80 text-primary-foreground">
+                      {monument.category}
+                    </Badge>
+                  )}
                 </div>
 
                 {/* Dynasty Period */}

@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import DynastyTimeline from "@/components/DynastyTimeline";
 import MonumentGallery from "@/components/MonumentGallery";
+import PerformingArts from "@/components/PerformingArts";
 import HeritageQuiz from "@/components/HeritageQuiz";
 import Footer from "@/components/Footer";
 
@@ -12,6 +13,7 @@ const Index = () => {
       <Hero />
       <DynastyTimeline />
       <MonumentGallery />
+      <PerformingArts />
       <HeritageQuiz />
       <Footer />
     </div>
