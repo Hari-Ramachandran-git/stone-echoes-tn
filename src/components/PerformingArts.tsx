@@ -33,13 +33,6 @@ const performingArts: ArtForm[] = [
     icon: Sparkles
   },
   {
-    id: "therukoothu",
-    name: "Therukoothu",
-    description: "Street theatre enacting epics like Ramayana and Mahabharata.",
-    category: "Theatre",
-    icon: Sparkles
-  },
-  {
     id: "parai-attam",
     name: "Parai Attam",
     description: "Oldest drum dance form, symbolizing community celebration.",

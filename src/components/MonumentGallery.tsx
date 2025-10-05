@@ -258,15 +258,6 @@ const MonumentGallery = () => {
           ))}
         </div>
 
-        {/* View More */}
-        <div className="text-center mt-12">
-          <Button 
-            size="lg" 
-            className="bg-gradient-temple hover:shadow-glow transition-all duration-300 font-culture font-semibold px-8"
-          >
-            Discover All Monuments
-          </Button>
-        </div>
       </div>
     </section>
   );
