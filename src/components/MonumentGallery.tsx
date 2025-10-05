@@ -8,6 +8,8 @@ import shoreTempleImage from "@/assets/shore-temple.jpg";
 import gingeeFortImage from "@/assets/gingee-fort.jpg";
 import tamilThaiTempleImage from "@/assets/tamil_thai.webp";
 import theppakulamTempleImage from "@/assets/theppakulam-temple.jpg";
+import kattabommanFortImage from "@/assets/kattabomman-fort.jpg";
+import kalugumalaiTempleImage from "@/assets/kalugumalai-temple.jpg";
 
 interface Monument {
   id: string;
@@ -94,6 +96,30 @@ const monuments: Monument[] = [
     highlights: ["Largest temple tank in Tamil Nadu", "Annual float festival", "Mandapam in center"],
     isUNESCO: false,
     category: "Sacred Water Body"
+  },
+  {
+    id: "kattabomman-fort",
+    name: "Veerapandiya Kattabomman Fort",
+    location: "Panchalankurichi",
+    period: "18th Century",
+    dynasty: "Polygar",
+    image: kattabommanFortImage,
+    description: "Historic fort of the legendary freedom fighter Veerapandiya Kattabomman, who resisted British colonial rule. This fortress stands as a symbol of Tamil pride and resistance.",
+    highlights: ["Freedom fighter's stronghold", "Resisted British rule", "Memorial monument"],
+    isUNESCO: false,
+    category: "Historical Fort"
+  },
+  {
+    id: "kalugumalai-temple",
+    name: "Kalugumalai Temple",
+    location: "Thoothukudi",
+    period: "8th-9th Century",
+    dynasty: "Pandyan",
+    image: kalugumalaiTempleImage,
+    description: "A magnificent rock-cut temple complex featuring exquisite Jain and Hindu sculptures carved from monolithic rock. The unfinished Vettuvan Koil is a masterpiece of Pandyan rock architecture.",
+    highlights: ["Rock-cut monolithic temple", "Ancient Jain sculptures", "Unfinished architectural marvel"],
+    isUNESCO: false,
+    category: "Rock-cut Temple"
   }
 ];
 
