@@ -10,6 +10,19 @@ import tanjourePaintingsImg from "@/assets/tanjore-paintings.jpg";
 import kolamArtImg from "@/assets/kolam-art.jpg";
 import bronzeSculpturesImg from "@/assets/bronze-sculptures.jpg";
 import stoneCarvingsImg from "@/assets/stone-carvings.jpg";
+import thanjavurDollsImg from "@/assets/thanjavur-dolls.jpg";
+import swamimalaiBronzeImg from "@/assets/swamimalai-bronze.jpg";
+import pongalImg from "@/assets/pongal.jpg";
+import chithiraiImg from "@/assets/chithirai-festival.jpg";
+import karthigaiDeepamImg from "@/assets/karthigai-deepam.jpg";
+import natyanjaliImg from "@/assets/natyanjali.jpg";
+import bananaLeafMealImg from "@/assets/banana-leaf-meal.jpg";
+import chettinadCuisineImg from "@/assets/chettinad-cuisine.jpg";
+import jigarthandaImg from "@/assets/jigarthanda.jpg";
+import sangamLiteratureImg from "@/assets/sangam-literature.jpg";
+import tirukkuralImg from "@/assets/tirukkural.jpg";
+import bhaktiMovementImg from "@/assets/bhakti-movement.jpg";
+import tamilScriptImg from "@/assets/tamil-script.jpg";
 
 interface ArtForm {
   id: string;
@@ -99,20 +112,7 @@ const visualArts: ArtForm[] = [
 ];
 
 const handicrafts: ArtForm[] = [
-  {
-    id: "kanchipuram-silk",
-    name: "Kanchipuram Silk Sarees",
-    description: "Handwoven with gold zari; a symbol of Tamil craftsmanship.",
-    category: "Textile",
-    icon: Scissors
-  },
-  {
-    id: "sungudi",
-    name: "Madurai Sungudi",
-    description: "Tie-dye fabric known for dotted patterns.",
-    category: "Textile",
-    icon: Scissors
-  },
+ 
   {
     id: "thanjavur-dolls",
     name: "Thanjavur Dolls",
