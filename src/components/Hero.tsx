@@ -33,7 +33,7 @@ const Hero = () => {
               Echoes of Eternity
             </span>
             <br />
-            <span className="text-primary text-4xl md:text-5xl drop-shadow-md" style={{ color: '#5c4119ff' }}>
+            <span className="text-primary text-4xl md:text-5xl drop-shadow-md" style={{ color: '#d57d47ff' }}>
               Tamil Nadu's History & Monuments
             </span>
           </h1>
