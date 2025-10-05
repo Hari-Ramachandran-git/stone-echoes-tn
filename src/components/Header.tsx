@@ -25,9 +25,7 @@ const Header = () => {
             <a href="#monuments" className="font-culture text-foreground hover:text-accent transition-colors">
               Monuments
             </a>
-            <a href="#heritage" className="font-culture text-foreground hover:text-accent transition-colors">
-              Heritage
-            </a>
+            
             <a href="#quiz" className="font-culture text-foreground hover:text-accent transition-colors">
               Quiz
             </a>
