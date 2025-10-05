@@ -78,7 +78,7 @@ const Footer = () => {
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2 opacity-80">
                 <Mail className="w-4 h-4" />
-                <span className="font-culture text-sm">heritage@tamilnadu.lpu.in</span>
+                <span className="font-culture text-sm">heritage@tamilnadu.nanba.in</span>
               </div>
               <p className="font-culture text-sm opacity-60">
                 Built with love for Tamil culture
