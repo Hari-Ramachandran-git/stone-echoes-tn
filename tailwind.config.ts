@@ -59,9 +59,9 @@ export default {
           dark: "hsl(42 100% 35%)",
         },
         coral: {
-          DEFAULT: "hsl(356 49% 52%)",
-          light: "hsl(356 49% 62%)",
-          dark: "hsl(356 49% 42%)",
+          DEFAULT: "hsla(356, 82%, 47%, 1.00)",
+          light: "hsla(356, 79%, 45%, 1.00)",
+          dark: "hsla(356, 76%, 29%, 1.00)",
         },
         stone: {
           DEFAULT: "hsl(0 0% 37%)",

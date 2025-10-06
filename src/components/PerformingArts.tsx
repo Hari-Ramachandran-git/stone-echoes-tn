@@ -10,19 +10,19 @@ import tanjourePaintingsImg from "@/assets/tanjore-paintings.jpg";
 import kolamArtImg from "@/assets/kolam-art.jpg";
 import bronzeSculpturesImg from "@/assets/bronze-sculptures.jpg";
 import stoneCarvingsImg from "@/assets/stone-carvings.jpg";
-import thanjavurDollsImg from "@/assets/thanjavur-dolls.jpg";
-import swamimalaiBronzeImg from "@/assets/swamimalai-bronze.jpg";
-import pongalImg from "@/assets/pongal.jpg";
-import chithiraiImg from "@/assets/chithirai-festival.jpg";
-import karthigaiDeepamImg from "@/assets/karthigai-deepam.jpg";
-import natyanjaliImg from "@/assets/natyanjali.jpg";
-import bananaLeafMealImg from "@/assets/banana-leaf-meal.jpg";
-import chettinadCuisineImg from "@/assets/chettinad-cuisine.jpg";
-import jigarthandaImg from "@/assets/jigarthanda.jpg";
-import sangamLiteratureImg from "@/assets/sangam-literature.jpg";
-import tirukkuralImg from "@/assets/tirukkural.jpg";
-import bhaktiMovementImg from "@/assets/bhakti-movement.jpg";
-import tamilScriptImg from "@/assets/tamil-script.jpg";
+import thanjavurDollsImg from "@/assets/thanjavur-dolls.webp";
+import swamimalaiBronzeImg from "@/assets/swamimalai-bronze-casting.webp";
+import pongalImg from "@/assets/pongal.webp";
+import chithiraiImg from "@/assets/chithirai-thiruvizha.webp";
+import karthigaiDeepamImg from "@/assets/karthigai-deepam.webp";
+import natyanjaliImg from "@/assets/Natyanjali.webp";
+import bananaLeafMealImg from "@/assets/Traditional-Banana-Leaf-Meals.jpeg";
+import chettinadCuisineImg from "@/assets/Chettinad-Cuisine.webp";
+import jigarthandaImg from "@/assets/Madurai-Jigarthanda.webp";
+import sangamLiteratureImg from "@/assets/Sangam-Literature.webp";
+import tirukkuralImg from "@/assets/thirukkural.webp";
+import bhaktiMovementImg from "@/assets/Bhakti-Movement.webp";
+import tamilScriptImg from "@/assets/Tamil-Script.webp";
 
 interface ArtForm {
   id: string;
@@ -118,14 +118,16 @@ const handicrafts: ArtForm[] = [
     name: "Thanjavur Dolls",
     description: "Traditional bobble-head toys.",
     category: "Craft",
-    icon: Scissors
+    icon: Scissors,
+    image: thanjavurDollsImg
   },
   {
     id: "bronze-casting",
     name: "Swamimalai Bronze Casting",
     description: "UNESCO-recognized metalwork tradition.",
     category: "Craft",
-    icon: Scissors
+    icon: Scissors,
+    image: swamimalaiBronzeImg
   }
 ];
 
@@ -135,28 +137,32 @@ const festivals: ArtForm[] = [
     name: "Pongal",
     description: "Harvest festival celebrating nature and farmers.",
     category: "Festival",
-    icon: Calendar
+    icon: Calendar,
+    image: pongalImg
   },
   {
     id: "chithirai",
     name: "Chithirai Thiruvizha",
     description: "Grand temple festival reenacting divine marriage (Madurai).",
     category: "Festival",
-    icon: Calendar
+    icon: Calendar,
+    image: chithiraiImg
   },
   {
     id: "karthigai-deepam",
     name: "Karthigai Deepam",
     description: "Festival of lights on Arunachala hill (Thiruvannamalai).",
     category: "Festival",
-    icon: Calendar
+    icon: Calendar,
+    image: karthigaiDeepamImg
   },
   {
     id: "natyanjali",
     name: "Natyanjali",
     description: "Bharatanatyam dance festival honoring Lord Nataraja (Chidambaram).",
     category: "Festival",
-    icon: Calendar
+    icon: Calendar,
+    image: natyanjaliImg
   }
 ];
 
@@ -166,21 +172,24 @@ const cuisine: ArtForm[] = [
     name: "Traditional Banana Leaf Meals",
     description: "Sambar, rasam, dosai, idli, and temple prasadam traditions.",
     category: "Cuisine",
-    icon: UtensilsCrossed
+    icon: UtensilsCrossed,
+    image: bananaLeafMealImg
   },
   {
     id: "chettinad",
     name: "Chettinad Cuisine",
     description: "Millet dishes, spicy curries, and aromatic flavors.",
     category: "Cuisine",
-    icon: UtensilsCrossed
+    icon: UtensilsCrossed,
+    image: chettinadCuisineImg
   },
   {
     id: "jigarthanda",
     name: "Madurai Jigarthanda",
     description: "Heritage cold beverage with milk, almond gum, and ice cream.",
     category: "Cuisine",
-    icon: UtensilsCrossed
+    icon: UtensilsCrossed,
+    image: jigarthandaImg
   }
 ];
 
@@ -190,28 +199,32 @@ const literature: ArtForm[] = [
     name: "Sangam Literature",
     description: "Earliest Tamil poetry, reflecting love, valor, and ethics.",
     category: "Literature",
-    icon: BookOpen
+    icon: BookOpen,
+    image: sangamLiteratureImg
   },
   {
     id: "thirukkural",
     name: "Tirukkural",
     description: "Moral masterpiece by Thiruvalluvar with 1,330 couplets on virtue, wealth, and love.",
     category: "Literature",
-    icon: BookOpen
+    icon: BookOpen,
+    image: tirukkuralImg
   },
   {
     id: "bhakti",
     name: "Bhakti Movement",
     description: "Devotional poetry of Alvars & Nayanmars inspiring temple culture.",
     category: "Literature",
-    icon: BookOpen
+    icon: BookOpen,
+    image: bhaktiMovementImg
   },
   {
     id: "tamil-script",
     name: "Tamil Script & Inscriptions",
     description: "Evolution of Tamil writing seen in temples and ancient rocks.",
     category: "Literature",
-    icon: BookOpen
+    icon: BookOpen,
+    image: tamilScriptImg
   }
 ];
 

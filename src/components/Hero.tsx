@@ -65,10 +65,10 @@ const Hero = () => {
             <Button 
               variant="secondary" 
               size="lg"
-              className="bg-coral/10 text-coral border-coral hover:bg-coral hover:text-white transition-all duration-300 font-culture font-semibold px-8 py-6 text-lg"
+              className="bg-orange-200/90 text-orange-600 border-orange-400 hover:bg-orange-400 hover:text-silver transition-all duration-300 font-culture font-semibold px-8 py-6 text-lg"
             onClick={() => window.location.href = '#quiz'}>
               <BookOpen className="w-5 h-5 mr-2" />
-              Take Heritage Quiz
+               Take Heritage Quiz
             </Button>
           </div>
 
