@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import DynastyTimeline from "@/components/DynastyTimeline";
 import MonumentGallery from "@/components/MonumentGallery";
 import PerformingArts from "@/components/PerformingArts";
+import FestivalTimeline from "@/components/FestivalTimeline";
 import HeritageQuiz from "@/components/HeritageQuiz";
 import Footer from "@/components/Footer";
 
@@ -14,6 +15,7 @@ const Index = () => {
       <DynastyTimeline />
       <MonumentGallery />
       <PerformingArts />
+      <FestivalTimeline />
       <HeritageQuiz />
       <Footer />
     </div>
