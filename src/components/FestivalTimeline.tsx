@@ -155,8 +155,8 @@ const FestivalTimeline = () => {
                     <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
                       {festival.videoUrl ? (
                         <iframe
-                          className="w-full h-full object-cover"
-                          src={`${festival.videoUrl}?autoplay=1&mute=1&loop=1&playlist=${festival.videoUrl.split('/').pop()}`}
+                          className="w-full h-full"
+                          src={festival.videoUrl}
                           title={festival.name}
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
