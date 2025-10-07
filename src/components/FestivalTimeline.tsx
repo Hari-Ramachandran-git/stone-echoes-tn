@@ -3,6 +3,16 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Sparkles } from "lucide-react";
 import pongalVideo from "@/assets/pongal-video.mp4";
 import jallikattuVideo from "@/assets/jallikattu-video.mp4";
+import thaipusamVideo from "@/assets/thaipusam.mp4";
+import panguniUthiramVideo from "@/assets/panguni-uthiram.mp4";
+import tamilPuthanduVideo from "@/assets/tamil-puthandu.mp4";
+import chithiraiThiruvizhaVideo from "@/assets/chithirai-thiruvizha.mp4";
+import vaikasiVisakamVideo from "@/assets/vaikasi-visakam.mp4";
+import chariotFestivalVideo from "@/assets/chariot-festival.mp4";
+import aadiPerukkuVideo from "@/assets/aadi-perukku.mp4";
+import krishnaJayanthiVideo from "@/assets/krishna-jayanthi.mp4";
+import navaratriGoluVideo from "@/assets/navaratri-golu.mp4";
+import karthigaiDeepamVideo from "@/assets/karthigai-deepam.mp4";
 
 interface Festival {
   id: string;
@@ -36,7 +46,7 @@ const festivals: Festival[] = [
     name: "Thaipusam",
     month: "January-February (Thai)",
     description: "Grand celebration honoring Lord Murugan. Devotees carry kavadis and undertake penance, culminating in spectacular processions to Murugan temples.",
-    videoUrl: "https://www.youtube.com/embed/GF2soNQalmM",
+    videoFile: thaipusamVideo,
     color: "bg-yellow-500",
   },
   {
@@ -44,7 +54,7 @@ const festivals: Festival[] = [
     name: "Panguni Uthiram",
     month: "March-April (Panguni)",
     description: "Celestial wedding festival celebrating divine marriages of deities. Major temple festivals with grand processions and elaborate rituals across Tamil Nadu.",
-    videoUrl: "https://www.youtube.com/embed/yu52IBbBUl4",
+    videoFile: panguniUthiramVideo,
     color: "bg-pink-500",
   },
   {
@@ -52,6 +62,7 @@ const festivals: Festival[] = [
     name: "Tamil New Year – Puthandu",
     month: "April 14 (Chithirai)",
     description: "Tamil New Year celebrated with new clothes, special dishes like mango pachadi (symbolizing life's varied experiences), and temple visits for blessings.",
+    videoFile: tamilPuthanduVideo,
     color: "bg-green-500",
   },
   {
@@ -59,6 +70,7 @@ const festivals: Festival[] = [
     name: "Chithirai Thiruvizha",
     month: "April-May (Chithirai)",
     description: "Madurai's grandest temple festival reenacting the celestial wedding of Goddess Meenakshi and Lord Sundareswarar, attracting millions of devotees.",
+    videoFile: chithiraiThiruvizhaVideo,
     color: "bg-purple-500",
   },
   {
@@ -66,6 +78,7 @@ const festivals: Festival[] = [
     name: "Vaikasi Visakam",
     month: "May-June (Vaikasi)",
     description: "Birth anniversary of Lord Murugan. Major celebrations at six abodes (Arupadai Veedu) with special abhishekams and chariot processions.",
+    videoFile: vaikasiVisakamVideo,
     color: "bg-orange-500",
   },
   {
@@ -73,6 +86,7 @@ const festivals: Festival[] = [
     name: "Chariot Festivals (Thanjavur)",
     month: "May-June",
     description: "Magnificent temple car festivals where deities are taken in grand procession on towering chariots, pulled by thousands of devotees through temple streets.",
+    videoFile: chariotFestivalVideo,
     color: "bg-blue-500",
   },
   {
@@ -80,6 +94,7 @@ const festivals: Festival[] = [
     name: "Aadi Perukku",
     month: "July-August (Aadi)",
     description: "River festival honoring water as life source. Women worship at riverbanks, offering prayers for prosperity and celebrating the monsoon's abundance.",
+    videoFile: aadiPerukkuVideo,
     color: "bg-cyan-500",
   },
   {
@@ -87,6 +102,7 @@ const festivals: Festival[] = [
     name: "Krishna Jayanthi",
     month: "August-September (Aavani)",
     description: "Lord Krishna's birth celebration with devotional songs, dahi handi (pot-breaking), and elaborate decorations. Children dress as Krishna and Radha.",
+    videoFile: krishnaJayanthiVideo,
     color: "bg-indigo-500",
   },
   {
@@ -94,20 +110,15 @@ const festivals: Festival[] = [
     name: "Navaratri & Golu",
     month: "September-October (Purattasi)",
     description: "Nine nights celebrating Goddess Durga. Homes display artistic doll arrangements (Golu) on stepped platforms, depicting mythological and cultural themes.",
+    videoFile: navaratriGoluVideo,
     color: "bg-rose-500",
-  },
-  {
-    id: "vijayadasami",
-    name: "Saraswati Puja & Vijayadasami",
-    month: "September-October",
-    description: "Victory of good over evil. Students worship books and tools, seeking blessings from Goddess Saraswati for knowledge and arts. Day of new beginnings.",
-    color: "bg-teal-500",
   },
   {
     id: "karthigai-deepam",
     name: "Karthigai Deepam",
     month: "November-December (Karthigai)",
     description: "Festival of lights with the divine beacon atop Arunachala hill in Thiruvannamalai. Homes and temples lit with countless oil lamps symbolizing enlightenment.",
+    videoFile: karthigaiDeepamVideo,
     color: "bg-amber-600",
   },
   {
