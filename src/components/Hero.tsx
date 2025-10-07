@@ -30,17 +30,17 @@ const Hero = () => {
           {/* Headline */}
           <h1 className="font-heritage text-5xl md:text-7xl font-bold mb-6 animate-gopuram">
             <span className="bg-gradient-sunrise bg-clip-text text-transparent drop-shadow-lg" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5)', color: '#e6beabff' }}>
-              Echoes of Eternity
+              One India
             </span>
             <br />
-            <span className="text-primary text-4xl md:text-5xl drop-shadow-md" style={{ color: '#d57d47ff' }}>
+            <span className="text-primary text-4xl md:text-5xl drop-shadow-md" style={{ color: '#eb6918ff' }}>
               Tamil Nadu's History & Monuments
             </span>
           </h1>
 
           {/* Subtext */}
           <p className="font-culture text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed"
-          style={{ color: 'white'}}>
+          style={{ color: '#6b3d18d8' }}>
             Discover the stories carved in stone, the dynasties that shaped South India, 
             and the living heritage of Tamil Nadu.
           </p>

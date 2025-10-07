@@ -1,4 +1,4 @@
-import { Crown, MapPin, Clock, Mail } from "lucide-react";
+import { Crown, MapPin, Clock, Mail, Contact } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
                 <Crown className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-heritage text-xl font-bold">Echoes of Eternity</h3>
+                <h3 className="font-heritage text-xl font-bold">ONE INDIA</h3>
                 <p className="text-sm opacity-80">Tamil Heritage</p>
               </div>
             </div>
@@ -77,12 +77,22 @@ const Footer = () => {
               © 2025 Tamil Heritage. Preserving history for the future.
             </p>
             <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2 opacity-80">
+              <div className="flex items-center gap-2 opacity-120">
                 <Mail className="w-4 h-4" />
-                <span className="font-culture text-sm">heritage@tamilnadu.nanba.in</span>
+                <span className="font-culture text-sm">opentostartup@gmail.com</span>
               </div>
-              <p className="font-culture text-sm opacity-60">
+              <div className="flex items-center gap-2 opacity-80">
+                <Contact className="w-4 h-4" />
+                <span className="font-culture text-sm">LPU University</span>
+              </div>
+              <li className="flex items-center gap-2 opacity-80">
+                <Contact className="w-3 h-3" />
+                LinkedIn: <a href="https://www.linkedin.com/in/hari-ramachandran-s-004662386?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="hover:text-gold transition-all">Hari Ramachandran</a>
+              </li>
+              <p className="font-culture text-sm opacity-100">
                 Built with love for Tamil culture
+                <span className="text-gold">❤️</span>
+                
               </p>
             </div>
           </div>

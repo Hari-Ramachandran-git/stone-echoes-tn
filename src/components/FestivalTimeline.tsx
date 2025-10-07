@@ -14,8 +14,6 @@ import krishnaJayanthiVideo from "@/assets/krishna-jayanthi.mp4";
 import navaratriGoluVideo from "@/assets/navaratri-golu.mp4";
 import karthigaiDeepamVideo from "@/assets/karthigai-deepam.mp4";
 
-
-
 interface Festival {
   id: string;
   name: string;
@@ -85,7 +83,7 @@ const festivals: Festival[] = [
   },
   {
     id: "chariot-festival",
-    name: "Chariot Festivals (Thanjavur)",
+    name: "Chariot Festivals (Thiruvarur)",
     month: "May-June",
     description: "Magnificent temple car festivals where deities are taken in grand procession on towering chariots, pulled by thousands of devotees through temple streets.",
     videoFile: chariotFestivalVideo,
