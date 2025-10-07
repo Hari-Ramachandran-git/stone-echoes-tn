@@ -17,6 +17,7 @@ const festivals: Festival[] = [
     name: "Pongal",
     month: "January (Thai)",
     description: "Four-day harvest festival celebrating the Sun God, nature, and farmers. Traditional sweet rice dish cooked in earthen pots symbolizes prosperity and abundance.",
+    videoUrl: "https://www.youtube.com/embed/acdewq1OMlA",
     color: "bg-amber-500",
   },
   {
@@ -24,6 +25,7 @@ const festivals: Festival[] = [
     name: "Jallikattu",
     month: "January (Mattu Pongal)",
     description: "Ancient bull-taming sport celebrated during Pongal. A symbol of Tamil pride and bravery, deeply rooted in agrarian culture and tradition.",
+    videoUrl: "https://www.youtube.com/embed/VyWsaqrXRHI",
     color: "bg-red-500",
   },
   {
@@ -31,6 +33,7 @@ const festivals: Festival[] = [
     name: "Thaipusam",
     month: "January-February (Thai)",
     description: "Grand celebration honoring Lord Murugan. Devotees carry kavadis and undertake penance, culminating in spectacular processions to Murugan temples.",
+    videoUrl: "https://www.youtube.com/embed/GF2soNQalmM",
     color: "bg-yellow-500",
   },
   {
@@ -38,6 +41,7 @@ const festivals: Festival[] = [
     name: "Panguni Uthiram",
     month: "March-April (Panguni)",
     description: "Celestial wedding festival celebrating divine marriages of deities. Major temple festivals with grand processions and elaborate rituals across Tamil Nadu.",
+    videoUrl: "https://www.youtube.com/embed/yu52IBbBUl4",
     color: "bg-pink-500",
   },
   {
@@ -148,22 +152,19 @@ const FestivalTimeline = () => {
                 {/* Content */}
                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                   <Card className="group hover:shadow-temple hover:border-accent/50 transition-all duration-300 hover:-translate-y-1 bg-card/80 backdrop-blur-sm overflow-hidden">
-                    {/* Video placeholder - can be replaced with actual video URLs */}
                     <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className={`w-20 h-20 rounded-full ${festival.color} opacity-20 animate-pulse`} />
-                      </div>
-                      {/* Video will go here when URLs are provided */}
-                      {festival.videoUrl && (
-                        <video
+                      {festival.videoUrl ? (
+                        <iframe
                           className="w-full h-full object-cover"
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                        >
-                          <source src={festival.videoUrl} type="video/mp4" />
-                        </video>
+                          src={`${festival.videoUrl}?autoplay=1&mute=1&loop=1&playlist=${festival.videoUrl.split('/').pop()}`}
+                          title={festival.name}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className={`w-20 h-20 rounded-full ${festival.color} opacity-20 animate-pulse`} />
+                        </div>
                       )}
                     </div>
 
