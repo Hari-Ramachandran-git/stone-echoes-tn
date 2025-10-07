@@ -26,6 +26,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heritage text-lg font-semibold mb-4">Explore</h4>
             <ul className="font-culture space-y-2 text-sm">
+              <li><a href="#festivals" className="opacity-80 hover:opacity-100 hover:text-gold transition-all">Festivals</a></li>
               <li><a href="#dynasties" className="opacity-80 hover:opacity-100 hover:text-gold transition-all">Dynasties</a></li>
               <li><a href="#monuments" className="opacity-80 hover:opacity-100 hover:text-gold transition-all">Monuments</a></li>
               <li><a href="#heritage" className="opacity-80 hover:opacity-100 hover:text-gold transition-all">Heritage</a></li>

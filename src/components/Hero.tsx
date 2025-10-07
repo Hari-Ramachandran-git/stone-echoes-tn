@@ -49,6 +49,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button 
               size="lg" 
+              className="bg-amber-200/90 text-amber-700 border-amber-500 hover:bg-amber-500 hover:text-white transition-all duration-300 font-culture font-semibold px-8 py-6 text-lg"
+            onClick={() => window.location.href = '#festivals'}>
+              <Crown className="w-5 h-5 mr-2" />
+              Explore Festival
+            </Button>
+            <Button 
+              size="lg" 
               className="bg-gradient-temple hover:shadow-glow transition-all duration-300 font-culture font-semibold px-8 py-6 text-lg"
             onClick={() => window.location.href = '#dynasties'}>
               <Crown className="w-5 h-5 mr-2" />

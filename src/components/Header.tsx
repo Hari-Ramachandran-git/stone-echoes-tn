@@ -19,6 +19,9 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <a href="#festivals" className="font-culture text-foreground hover:text-accent transition-colors">
+              Festivals
+            </a>
             <a href="#dynasties" className="font-culture text-foreground hover:text-accent transition-colors">
               Dynasties
             </a>
@@ -29,12 +32,8 @@ const Header = () => {
             <a href="#quiz" className="font-culture text-foreground hover:text-accent transition-colors">
               Quiz
             </a>
+              
           </nav>
-
-          {/* Mobile menu button */}
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="w-6 h-6" />
-          </Button>
         </div>
       </div>
     </header>

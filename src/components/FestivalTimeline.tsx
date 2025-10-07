@@ -5,7 +5,7 @@ import pongalVideo from "@/assets/pongal-video.mp4";
 import jallikattuVideo from "@/assets/jallikattu-video.mp4";
 import thaipusamVideo from "@/assets/thaipusam.mp4";
 import panguniUthiramVideo from "@/assets/panguni-uthiram.mp4";
-import tamilPuthanduVideo from "@/assets/tamil-puthandu.mp4";
+import tamilPuthanduVideo from "@/assets/tamil new year.mp4";
 import chithiraiThiruvizhaVideo from "@/assets/chithirai-thiruvizha.mp4";
 import vaikasiVisakamVideo from "@/assets/vaikasi-visakam.mp4";
 import chariotFestivalVideo from "@/assets/chariot-festival.mp4";
@@ -13,6 +13,8 @@ import aadiPerukkuVideo from "@/assets/aadi-perukku.mp4";
 import krishnaJayanthiVideo from "@/assets/krishna-jayanthi.mp4";
 import navaratriGoluVideo from "@/assets/navaratri-golu.mp4";
 import karthigaiDeepamVideo from "@/assets/karthigai-deepam.mp4";
+
+
 
 interface Festival {
   id: string;
@@ -121,13 +123,6 @@ const festivals: Festival[] = [
     videoFile: karthigaiDeepamVideo,
     color: "bg-amber-600",
   },
-  {
-    id: "vaikunta-ekadasi",
-    name: "Vaikunta Ekadasi",
-    month: "December-January (Margazhi)",
-    description: "Most sacred Vishnu festival. Devotees pass through the 'Vaikunta Dwaram' (heaven's gate) at temples for divine liberation and spiritual merit.",
-    color: "bg-violet-500",
-  },
 ];
 
 const FestivalTimeline = () => {
@@ -212,6 +207,24 @@ const FestivalTimeline = () => {
                       <CardDescription className="font-culture text-sm leading-relaxed">
                         {festival.description}
                       </CardDescription>
+                      {/* <div className="flex gap-2">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="flex-1 group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300"
+                  >
+                    <Camera className="w-4 h-4 mr-2" />
+                    Explore
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    size="sm" 
+                    className="flex-1 hover:bg-coral/10 hover:text-coral"
+                  >
+                    <Clock className="w-4 h-4 mr-2" />
+                    History
+                  </Button>
+                </div> */}
                     </CardContent>
                   </Card>
                 </div>
@@ -222,7 +235,7 @@ const FestivalTimeline = () => {
             ))}
           </div>
         </div>
-
+        
         <div className="text-center mt-16">
           <p className="font-culture text-muted-foreground italic">
             Each festival weaves together devotion, culture, and community,
