@@ -120,10 +120,10 @@ const FestivalTimeline = () => {
   return (
     <section id="festival-timeline" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-4">
+        <div className="text-center mb-16 animate-fade-in">
+          <div className="inline-flex items-center gap-2 mb-4 animate-scale-in">
             <Calendar className="w-8 h-8 text-accent" />
-            <Sparkles className="w-6 h-6 text-accent" />
+            <Sparkles className="w-6 h-6 text-accent animate-pulse" />
           </div>
           <h2 className="font-heritage text-4xl md:text-5xl font-bold text-primary mb-4">
             Tamil Nadu Festival Calendar
@@ -144,14 +144,16 @@ const FestivalTimeline = () => {
                 key={festival.id}
                 className={`relative flex items-center ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } flex-col gap-8`}
+                } flex-col gap-8 animate-fade-in`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Timeline dot */}
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-accent border-4 border-background shadow-lg z-10" />
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-accent border-4 border-background shadow-lg z-10 animate-scale-in" 
+                  style={{ animationDelay: `${index * 0.1 + 0.2}s` }} />
 
                 {/* Content */}
                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                  <Card className="group hover:shadow-temple hover:border-accent/50 transition-all duration-300 hover:-translate-y-1 bg-card/80 backdrop-blur-sm overflow-hidden">
+                  <Card className="group hover:shadow-temple hover:border-accent/50 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-card/80 backdrop-blur-sm overflow-hidden">
                     <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
                       {festival.videoUrl ? (
                         <iframe
