@@ -1,6 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Sparkles } from "lucide-react";
+import pongalVideo from "@/assets/pongal-video.mp4";
+import jallikattuVideo from "@/assets/jallikattu-video.mp4";
 
 interface Festival {
   id: string;
@@ -8,6 +10,7 @@ interface Festival {
   month: string;
   description: string;
   videoUrl?: string;
+  videoFile?: string;
   color: string;
 }
 
@@ -17,7 +20,7 @@ const festivals: Festival[] = [
     name: "Pongal",
     month: "January (Thai)",
     description: "Four-day harvest festival celebrating the Sun God, nature, and farmers. Traditional sweet rice dish cooked in earthen pots symbolizes prosperity and abundance.",
-    videoUrl: "https://www.youtube.com/embed/acdewq1OMlA",
+    videoFile: pongalVideo,
     color: "bg-amber-500",
   },
   {
@@ -25,7 +28,7 @@ const festivals: Festival[] = [
     name: "Jallikattu",
     month: "January (Mattu Pongal)",
     description: "Ancient bull-taming sport celebrated during Pongal. A symbol of Tamil pride and bravery, deeply rooted in agrarian culture and tradition.",
-    videoUrl: "https://www.youtube.com/embed/VyWsaqrXRHI",
+    videoFile: jallikattuVideo,
     color: "bg-red-500",
   },
   {
@@ -155,7 +158,17 @@ const FestivalTimeline = () => {
                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                   <Card className="group hover:shadow-temple hover:border-accent/50 transition-all duration-500 hover:-translate-y-2 hover:scale-105 bg-card/80 backdrop-blur-sm overflow-hidden">
                     <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
-                      {festival.videoUrl ? (
+                      {festival.videoFile ? (
+                        <video
+                          className="w-full h-full object-cover"
+                          src={festival.videoFile}
+                          title={festival.name}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                        />
+                      ) : festival.videoUrl ? (
                         <iframe
                           className="w-full h-full"
                           src={festival.videoUrl}
