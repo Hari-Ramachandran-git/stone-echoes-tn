@@ -37,7 +37,64 @@ const quizQuestions: QuizQuestion[] = [
     correct: 1,
     explanation: "The Shore Temple was constructed by the Pallavas in the 8th century, representing their mastery in rock-cut architecture.",
     difficulty: 'Medium'
-  }
+  },
+  {
+    id: "q4",
+    question: "Name UNESCO World Heritage site that stands as the world's tallest temple tower of its time.",
+    options: ["Brihadeeswarar Temple", "Meenakshi Temple", "Ramanathaswamy Temple", "Airavatesvara Temple"],
+    correct: 0,
+    explanation: "Brihadeeswarar Temple Thanjavur built by Raja Raja Chola I, this UNESCO World Heritage site stands as the world's tallest temple tower of its time, showcasing the pinnacle of Chola architecture.",
+    difficulty: 'Medium'
+  },
+  {
+    id: "q5",
+    question: "Classical dance form born in Tamil temples; graceful gestures, storytelling through movement.",
+    options: ["Karagattam","Bharatanatyam","Kuchipudi","Kathakali"],
+    correct:  1,
+    explanation: "Bharatanatyam is the Classical dance form born in Tamil temples; graceful gestures, storytelling through movement .",
+    difficulty: 'Medium'
+  },
+  {
+    id: "q6",
+    question: "Which of the following is UNESCO-recognized metalwork tradition in Tamilnadu",
+    options: ["Pattachitra","Dhokra","Swamimalai Bronze Casting","Bidri"],
+    correct:  2,
+    explanation: "Swamimalai Bronze Casting is UNESCO-recognized metalwork tradition in Tamilnadu .",
+    difficulty: 'Medium'
+  },
+  {
+    id: "q7",
+    question: "Moral masterpiece with 1,330 couplets on virtue, wealth, and love.",
+    options : ["Ramayana","Mahabharata","Tirukkural","Silappatikaram"],
+    correct: 2,
+    explanation: "Tirukkural is a Moral masterpiece with 1,330 couplets on virtue, wealth, and love.",
+    difficulty: 'Medium'
+  },
+  {
+    id: "q8",
+    question: "Madurai's grandest temple festival reenacting the celestial wedding of Goddess Meenakshi and Lord Sundareswarar, attracting millions of devotees.",
+    options : ["Panguni Uthiram","Chithirai Festival","Navaratri","Thaipusam"],
+    correct: 1,
+    explanation: "Chithirai Festival is the Madurai's grandest temple festival reenacting the celestial wedding of Goddess Meenakshi and Lord Sundareswarar, attracting millions of devotees.",
+    difficulty: 'Medium'
+  },
+  {
+    id: "q9",
+    question: "Built on a sacred rock where Swami Vivekananda meditated in 1892, this memorial stands at the confluence of three seas. A symbol of spirituality and national pride, offering panoramic ocean views..",
+    options : ["Vivekananda Rock Memorial","Thiruvalluvar Statue","Gandhi Mandapam","Rameswaram Temple"],
+    correct: 0,
+    explanation: "Vivekananda Rock Memorial is Built on a sacred rock where Swami Vivekananda meditated in 1892, this memorial stands at the confluence of three seas. A symbol of spirituality and national pride, offering panoramic ocean views.",
+    difficulty: 'Medium'
+  },
+  {
+    id: "q10",
+    question: "Earliest Tamil poetry, reflecting love, valor, and ethics..",
+    options : ["Ramayana","Mahabharata","Tirukkural","Sangam Literature"],
+    correct: 3,
+    explanation: "Sangam Literature is the Earliest Tamil poetry, reflecting love, valor, and ethics.",
+    difficulty: 'Medium'
+  },
+
 ];
 
 const HeritageQuiz = () => {
